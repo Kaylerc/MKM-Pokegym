@@ -1,0 +1,21 @@
+/* full width cells by default */
+/* .gallery-cell {
+  width: 100%;
+} */
+
+
+.grid-temp {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 350px 50px;
+  height: 800px;
+}
+
+#trainer-grid {
+  display: grid;
+  grid-template-columns: 20% 40% 20%;
+}
+
+#trainer {
+  height:390px;
+}
