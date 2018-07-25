@@ -1,3 +1,6 @@
+trainer = {};
+
+
 var pokemonRequest = new XMLHttpRequest(); 
 var pokemonData;
 pokemonRequest.onreadystatechange = function() {
