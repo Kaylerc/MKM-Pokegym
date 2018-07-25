@@ -19,14 +19,14 @@
 **************************** */
 
 .s6 {
-  height: 400px 400px;
+  height: 500px 500px;
 }
 
 .s12 {
   text-align: center;
 }
 
-#trl {
+/* #trl {
   width: 20% !important;
   height: 350px;
 }
@@ -37,8 +37,26 @@
 
 #trs {
   width: 60px;
-}
+} */
 
 #trainer {
   height: 50%
+}
+
+h3 {
+  text-align: center;
+}
+
+.carousel {
+  padding-bottom: 15px;
+}
+
+#trainer-grid {
+  background-color: pink;
+}
+
+
+#poke-grid {
+  background-color: green;
+  z-index: 10;
 }
