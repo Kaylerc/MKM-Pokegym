@@ -1,8 +1,8 @@
-/* ********************
+/* ******************** */
 
 .grid-temp {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 350px 50px;
   height: 800px;
 }
@@ -10,13 +10,14 @@
 #trainer-grid {
   display: grid;
   grid-template-columns: 20% 40% 20%;
+  grid-template-rows: 20% 80%;
 }
 
 #trainer {
   height:390px;
 }
 
-**************************** */
+/* **************************** */
 
 .s6 {
   height: 500px 500px;
@@ -39,6 +40,11 @@
   width: 60px;
 } */
 
+
+
+/* **************************************** */
+
+
 #trainer {
   height: 50%
 }
@@ -48,7 +54,7 @@ h3 {
 }
 
 .carousel {
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 #trainer-grid {
