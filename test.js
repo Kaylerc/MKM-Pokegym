@@ -30,26 +30,17 @@ function getTrainer(name) {
 
 	if (name == "Kayler") {
 		pokemonArr = trainer.Kayler.url;
-		for (i = 0; i < pokemonArr.length; i++) {
-			choice = pokemonArr[i];
-		}
 	} else if (name == "Minji") {
 		pokemonArr = trainer.Minji.url;
-		for (i = 0; i < pokemonArr.length; i++) {
-			if (i == 0) {
-				choice = pokemonArr[i];
-			}
-		}
 	} else if (name == "Strewbs") {
-		pokemonArr = trainer.Strewbs.url;
-		for (i = 0; i < pokemonArr.length; i++) {
-			if (i == 0) {
-				choice = pokemonArr[i];
-			}
-		}
+		pokemonArr = trainer.Strewbs.url;		
 	} else {
 		alert("Not a gym member!");
 	} 
+
+	for (i = 0; i < pokemonArr.length; i++) {
+		if ()
+	}
 
 	console.log(pokemonArr);
 	getPokemon(choice);
@@ -75,8 +66,6 @@ function getPokemon(choice) {
 		pokemonRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/${choice}.json`, true);
 		pokemonRequest.send();
 }
-
-
 
 
 
