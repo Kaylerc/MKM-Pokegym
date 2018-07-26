@@ -74,8 +74,15 @@ function displayStat(pokeOrder) {
 		i = 2;
 	}
 
-	let pokeName = document.getElementById('stats');
+	let pokeName = document.getElementById('name');
 	pokeName.innerHTML = array[i][0];
 
+	let hp = document.getElementById('hp');
+	hp.innerHTML = `hp: ${array[i][1]['hp']}`;
+
+	let attack = document.getElementById('attack');
+	attack.innerHTML = `attack: ${array[i][1]['attack']}`;
+
+	
 }
 
