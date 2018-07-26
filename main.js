@@ -13,13 +13,20 @@ function chooseTrainer(name) {
 	image = document.getElementById('trainer');
 	trainerName = document.getElementById('trainerName');
 	dot = document.getElementById('name'); 
+	level = document.getElementById('level');
+	battle = document.getElementById('battle');
+	caught = document.getElementById('caught');
 
 	if (name == "Kayler") {
 
 		// console.log(trainers.Kayler.pokemon);
 		image.src = "images/kctrainern.png";
 		trainerName.innerHTML = name;
+		level.innerHTML = `<i class="fas fa-signal"></i> Level: 128`;
+		battle.innerHTML = `<i class="fas fa-trophy"></i> Battles:  815`;
+		caught.innerHTML = `<i class="far fa-dot-circle"></i> Pokemon: 3`;
 		dot.innerHTML = ". . .";
+
 
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/bulb.png";
@@ -36,6 +43,9 @@ function chooseTrainer(name) {
 		// console.log(trainers.Minji.pokemon);
 		image.src = "images/minji.png";
 		trainerName.innerHTML = name;
+		level.innerHTML = `<i class="fas fa-signal"></i> Level: 88`;
+		battle.innerHTML = `<i class="fas fa-trophy"></i> Battles:  818`;
+		caught.innerHTML = `<i class="far fa-dot-circle"></i> Pokemon: 3`;
 		dot.innerHTML = ". . .";
 
 		pokeOne = document.getElementById('pokeOne');
@@ -52,8 +62,11 @@ function chooseTrainer(name) {
 		// console.log(trainers.Strewbs.pokemon);		
 		image.src = "images/strewbs.png";
 		trainerName.innerHTML = name;
+		level.innerHTML = `<i class="fas fa-signal"></i> Level: 5`;
+		battle.innerHTML = `<i class="fas fa-trophy"></i> Battles:  55`;
+		caught.innerHTML = `<i class="far fa-dot-circle"></i> Pokemon: 3`;
 		dot.innerHTML = ". . .";
-		
+
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/vap2.png";
 		pokeTwo = document.getElementById('pokeTwo');
@@ -83,15 +96,15 @@ function displayStat(pokeOrder) {
 	pokeName.innerHTML = array[i][0];
 
 	let hp = document.getElementById('hp');
-	hp.innerHTML = `<strong>HP:</strong>   ${array[i][1]['hp']}`;
+	hp.innerHTML = `<span>HP:</span>   ${array[i][1]['hp']}`;
 
 	let attack = document.getElementById('attack');
-	attack.innerHTML = `<strong>ATTACK:</strong>   ${array[i][1]['attack']}`;
+	attack.innerHTML = `<span>ATTACK:</span>   ${array[i][1]['attack']}`;
 
 	let defense = document.getElementById('defense');
-	defense.innerHTML = `<strong>DEFENSE:</strong>   ${array[i][1]['defense']}`;
+	defense.innerHTML = `<span>DEFENSE:</span>   ${array[i][1]['defense']}`;
 
 	let abilities = document.getElementById('abilities');
-	abilities.innerHTML = `<strong>ABILITIES:</strong>   ${array[i][1]['abilities'][0]} ${array[i][1]['abilities'][1]}`;
+	abilities.innerHTML = `<span>ABILITIES:</span>   ${array[i][1]['abilities'][0]} ${array[i][1]['abilities'][1]}`;
 }
 
