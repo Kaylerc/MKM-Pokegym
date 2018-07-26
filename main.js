@@ -53,7 +53,7 @@ function chooseTrainer(name) {
 		image.src = "images/strewbs.png";
 		trainerName.innerHTML = name;
 		dot.innerHTML = ". . .";
-
+		
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/vap2.png";
 		pokeTwo = document.getElementById('pokeTwo');
