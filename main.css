@@ -4,12 +4,14 @@
 .grid-temp {
   display: grid;
   grid-template-columns: 55% 45%;
+
   grid-template-rows: 400px;
   height: 400px;
 }
 
 #trainer-grid {
   display: grid;
+
   grid-template-columns: 20% 40% 40%;
   grid-gap: 5px;
   grid-template-rows: 20% 80%;
@@ -19,17 +21,22 @@
   height:390px;
   padding-left: 15px;
 
+
 }
 
 /* **************************** */
 
+
 /* .s6 {
+
   height: 500px 500px;
 }
 
 .s12 {
   text-align: center;
+
 } */
+
 
 /* #trl {
   width: 20% !important;
@@ -79,9 +86,13 @@ h3 {
   height: 400px;
   width: auto;
 
+/* **************************************** */
+
+
+#trainer {
+  height: 50%
 }
 
 #bat {
   background-color: green;
 }
-
