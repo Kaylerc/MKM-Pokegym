@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<!-- Compiled and minified CSS -->
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
 	 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans" rel="stylesheet">
 
@@ -45,20 +46,25 @@
 	</div>
 
 		<div>
-			<div id="poke-grid">
-				<h3 id ="name">. . .</h3>
-				<div class="carousel"style="margin-top:-84px; height:410px; margin-left:-10px; width:117%">
+			<div class="pokemon-grid" id="poke-grid">
+				<div id="stats">
+					<h5 id ="name">. . .</h5>
+					<ul>
+						<li id="hp"> --- </li>
+						<li id="attack"> --- </li>
+						<li id="defense"> --- </li>
+						<li id="abilities"> --- </li>
+					</ul>
+				</div>
+				<div class="carousel"style="margin-top:-50px; height:410px; margin-left:-10px; width:200%">
 					<a class="carousel-item" href="#" onclick="displayStat('pokeOne')"><img src="images/bulb.png" id="pokeOne"></a>
 					<a class="carousel-item" href="#" onclick="displayStat('pokeTwo')"><img src="images/char.png" id="pokeTwo"></a>
 					<a class="carousel-item" href="#" onclick="displayStat('pokeThree')"><img src="images/jig.png" id="pokeThree"></a>
+			
+
 				</div>
 			</div>
-			<div id="stats">
-				<p id="hp"> --- </p>
-				<p id="attack"> --- </p>
-				<p id="defense"> --- </p>
-				<p id="abilities"> --- </p>
-			</div>
+		
 			
 		</div>
 	</div>

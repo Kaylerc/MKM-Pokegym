@@ -15,6 +15,10 @@ html {
   linear-gradient(to right top, #ff77fb 0%, #3498db 100%);
 }
 
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
@@ -23,16 +27,23 @@ h3 {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
+h5 {
+ font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+}
+
 .container {
 	width: 90%;
 	padding: 20px;
 }
 
-.pokemon-grid {
+/*.pokemon-grid {
 	display: grid;
 	grid-template: 100% / 30% 70%;
 	grid-gap: 5%;
-}
+}*/
 
 
 .grid-temp {
@@ -40,7 +51,6 @@ h3 {
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px;
   height: 400px;
-  opacity:0.2;
   height: 500px;
   padding: 6%;
   border-radius: 10px;
@@ -51,7 +61,6 @@ background: rgba(255, 255, 255, 0.1);
 
 #trainer-grid {
   display: grid;
-
   grid-template-columns: 20% 40% 30%;
   grid-gap: 20px;
   grid-template-rows: 20% 50%;
@@ -61,12 +70,12 @@ background: rgba(255, 255, 255, 0.1);
   margin-right: 10%;
   border-radius: 10px;
   box-shadow: black -2px -2px 10px;
-background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
+
 
 #poke-grid {
   display: grid;
-
   grid-template-columns: 20% 40% 30%;
   grid-gap: 5px;
   grid-template-rows: 20% 50%;
@@ -75,10 +84,25 @@ background: rgba(255, 255, 255, 0.1);
   padding: 6%;
   border-radius: 10px;
   box-shadow: black -2px -2px 10px;
-background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  /*border: 1px solid red;*/
+}
+
+/*#poke-grid * {
+  border: 1px solid red;
+}*/
+
+#stats {
+  display: grid;
+  justify-content: start;
+  /*margin-right: 5%;*/
 }
 
 
+#stats ul li {
+  font-size: 20px;
+  padding: ;
+}
 
 
 
@@ -100,7 +124,7 @@ background: rgba(255, 255, 255, 0.1);
 
 
 #trainer {
-  height: 50%
+  height: 40vh;
 }
 
 #bat {
