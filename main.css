@@ -3,29 +3,32 @@
 .grid-temp {
   display: grid;
   grid-template-columns: 55% 45%;
-  grid-template-rows: 350px 50px;
-  height: 800px;
+  grid-template-rows: 400px;
+  height: 400px;
 }
 
 #trainer-grid {
   display: grid;
-  grid-template-columns: 20% 40% 20%;
+  grid-template-columns: 20% 40% 40%;
+  grid-gap: 5px;
   grid-template-rows: 20% 80%;
 }
 
 #trainer {
   height:390px;
+  padding-left: 15px;
+
 }
 
 /* **************************** */
 
-.s6 {
+/* .s6 {
   height: 500px 500px;
 }
 
 .s12 {
   text-align: center;
-}
+} */
 
 /* #trl {
   width: 20% !important;
@@ -46,7 +49,8 @@
 
 
 #trainer {
-  height: 50%
+  height: 650%;
+  width: 90%;
 }
 
 h3 {
@@ -55,14 +59,27 @@ h3 {
 
 .carousel {
   /* padding-bottom: 15px; */
+  /* height:501px; */
 }
 
 #trainer-grid {
   background-color: pink;
+  height: 400px;
+}
+
+#trainer-grid div {
+  padding: 15px;
 }
 
 
 #poke-grid {
   background-color: green;
-  z-index: 10;
+  margin-top: -29px;
+  height: 400px;
+  width: auto;
+
+}
+
+#bat {
+  background-color: green;
 }
