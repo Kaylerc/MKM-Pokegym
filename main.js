@@ -25,6 +25,7 @@ function chooseTrainer(name) {
 		pokeThree = document.getElementById('pokeThree');
 		pokeThree.src = "images/jig.png";
 
+		console.log(trainers.Kayler.all());
 		return trainers.Kayler.all();
 
 	} else if (name == "Minji") {
@@ -60,11 +61,21 @@ function chooseTrainer(name) {
 	}
 }
 
-// // Display Pokemon Stats
+// Display Pokemon Stats
 
-// function displayStat(pokeName) {
-// 	chooseTrainer(name);
-// 	console.log(pokemonArr)
-// 	array = pokemonArr;
-// }
+function displayStat(pokeOrder) {
+	array = pokemonArr;
+
+	if (pokeOrder == 'pokeOne') {
+		i = 0;
+	} else if (pokeOrder == 'pokeTwo') {
+		i = 1;
+	} else if (pokeOrder == 'pokeThree') {
+		i = 2;
+	}
+
+	let pokeName = document.getElementById('stats');
+	pokeName.innerHTML = array[i][0];
+
+}
 
