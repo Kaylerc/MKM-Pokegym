@@ -38,15 +38,11 @@ function getTrainer(name) {
 		alert("Not a gym member!");
 	} 
 
-	for (i = 0; i < pokemonArr.length; i++) {
-		if ()
-	}
-
 	console.log(pokemonArr);
 	getPokemon(choice);
 }
 
-function getPokemon(choice) {
+function getPokemon(i) {
 		var pokemonRequest = new XMLHttpRequest(); 
 		
 		pokemonRequest.onreadystatechange = function() {
