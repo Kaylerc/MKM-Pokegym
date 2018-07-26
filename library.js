@@ -110,42 +110,48 @@ var bulbaRequest = new XMLHttpRequest();
 
 /////////////////////////////////////////
 
-var bulbasRequest = new XMLHttpRequest(); 
+var squirtleRequest = new XMLHttpRequest(); 
 		
-	bulbasRequest.onreadystatechange = function() {
+	squirtleRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			bulbasData = JSON.parse(this.response);
+			squirtleData = JSON.parse(this.response);
 			// console.log(bulbasData);
-			trainers.Minji.pokemon["Bulbasaurus"] = {
+			trainers.Minji.pokemon["Squirtle"] = {
 				
-					hp: bulbasData['stats'][5]['base_stat'],
-			        attack: bulbasData['stats'][4]['base_stat'],
-			        defense: bulbasData['stats'][3]['base_stat'],
-			        abilities: [bulbasData['abilities'][0]['ability']['name'], bulbasData['abilities'][1]['ability']['name']],
-			        sprites: bulbasData['sprites']['front_default'],
+					hp: squirtleData['stats'][5]['base_stat'],
+			        attack: squirtleData['stats'][4]['base_stat'],
+			        defense: squirtleData['stats'][3]['base_stat'],
+			        abilities: [squirtleData['abilities'][0]['ability']['name'], squirtleData['abilities'][1]['ability']['name']],
+			        sprites: squirtleData['sprites']['front_default'],
 				
 			}
 	   }	
 	}
-	bulbasRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/bulbas.json`, true);
-	bulbasRequest.send();
+	squirtleRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/bulbas.json`, true);
+	squirtleRequest.send();
 
 /////////////////////////////////////////
 
-var metapodRequest = new XMLHttpRequest(); 
+var butterRequest = new XMLHttpRequest(); 
 		
-	metapodRequest.onreadystatechange = function() { /// NEED TO FIX THIS
+	butterRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			metapodData = JSON.parse(this.response);
-			console.log(metapodData);
-			trainers.Minji.pokemon["Metapod"] = {
-				hp: metapodData['stats'][5]['base_stat'],
-				attack: metapodData['stats'][4]['base_stat']
+			butterData = JSON.parse(this.response);
+			// console.log(bulbasData);
+			trainers.Minji.pokemon["Butter Free"] = {
+				
+					hp: butterData['stats'][5]['base_stat'],
+			        attack: butterData['stats'][4]['base_stat'],
+			        defense: butterData['stats'][3]['base_stat'],
+			        abilities: [butterData['abilities'][0]['ability']['name'], butterData['abilities'][1]['ability']['name']],
+			        sprites: butterData['sprites']['front_default'],
+				
 			}
 	   }	
 	}
-	metapodRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/metapod.json`, true);
-	metapodRequest.send();
+	butterRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/bulbas.json`, true);
+	butterRequest.send();
+
 
 ////////////////////////////////////////
 
