@@ -12,11 +12,14 @@ var i;
 function chooseTrainer(name) {
 	image = document.getElementById('trainer');
 	trainerName = document.getElementById('trainerName');
+	dot = document.getElementById('name'); 
+
 	if (name == "Kayler") {
 
 		console.log(trainers.Kayler.pokemon);
 		image.src = "images/kctrainern.png";
 		trainerName.innerHTML = name;
+		dot.innerHTML = ". . .";
 
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/bulb.png";
@@ -33,6 +36,7 @@ function chooseTrainer(name) {
 		console.log(trainers.Minji.pokemon);
 		image.src = "images/minji.png";
 		trainerName.innerHTML = name;
+		dot.innerHTML = ". . .";
 
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/bulb.png";
@@ -48,6 +52,7 @@ function chooseTrainer(name) {
 		console.log(trainers.Strewbs.pokemon);		
 		image.src = "images/strewbs.png";
 		trainerName.innerHTML = name;
+		dot.innerHTML = ". . .";
 
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/vap2.png";
@@ -78,15 +83,15 @@ function displayStat(pokeOrder) {
 	pokeName.innerHTML = array[i][0];
 
 	let hp = document.getElementById('hp');
-	hp.innerHTML = `hp:  ${array[i][1]['hp']}`;
+	hp.innerHTML = `hp:   ${array[i][1]['hp']}`;
 
 	let attack = document.getElementById('attack');
-	attack.innerHTML = `attack:  ${array[i][1]['attack']}`;
+	attack.innerHTML = `attack:   ${array[i][1]['attack']}`;
 
 	let defense = document.getElementById('defense');
-	defense.innerHTML = `defense:  ${array[i][1]['defense']}`;
+	defense.innerHTML = `defense:   ${array[i][1]['defense']}`;
 
 	let abilities = document.getElementById('abilities');
-	abilities.innerHTML = `abilities  ${array[i][1]['abilities']}`;
+	abilities.innerHTML = `abilities:   ${array[i][1]['abilities'][0]} ${array[i][1]['abilities'][1]}`;
 }
 
