@@ -1,12 +1,22 @@
+pokemonArr = [];
 trainers = {
 	Kayler: {
-		pokemon: {},
+		all: function() {
+			pokemonArr = Object.entries(this.pokemon);
+			return pokemonArr;
+		},
 	},
 	Minji: {
-		pokemon: {},
+		all: function() {
+			pokemonArr = Object.entries(this.pokemon);
+			return pokemonArr;
+		},
 	},
 	Strewbs: {
-		pokemon: {},
+		all: function() {
+			pokemonArr = Object.entries(this.pokemon);
+			return pokemonArr;
+		},
 	},
 }
 
@@ -17,7 +27,7 @@ var bulbRequest = new XMLHttpRequest();
 	bulbRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 		var bulbData = JSON.parse(this.response);
-			console.log(bulbData);
+			// console.log(bulbData);
 			trainers.Kayler.pokemon = {
 				"Bulbasaur": {
 					hp: bulbData['stats'][5]['base_stat'],
@@ -39,7 +49,7 @@ var charRequest = new XMLHttpRequest();
 	charRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			charData = JSON.parse(this.response);
-			console.log(charData);
+			// console.log(charData);
 			trainers.Kayler.pokemon["Charmander"] = {
 			
 					hp: charData['stats'][5]['base_stat'],
@@ -61,7 +71,7 @@ var jigRequest = new XMLHttpRequest();
 	jigRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			jigData = JSON.parse(this.response);
-			console.log(jigData);
+			// console.log(jigData);
 			trainers.Kayler.pokemon["Jiggly Puff"] = {
 				
 					hp: jigData['stats'][5]['base_stat'],
@@ -83,7 +93,7 @@ var bulbaRequest = new XMLHttpRequest();
 	bulbaRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			bulbaData = JSON.parse(this.response);
-			console.log(bulbaData);
+			// console.log(bulbaData);
 			trainers.Minji.pokemon = {
 				"Bulbasaur": {
 					hp: bulbaData['stats'][5]['base_stat'],
@@ -105,7 +115,7 @@ var bulbasRequest = new XMLHttpRequest();
 	bulbasRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			bulbasData = JSON.parse(this.response);
-			console.log(bulbasData);
+			// console.log(bulbasData);
 			trainers.Minji.pokemon["Bulbasaurus"] = {
 				
 					hp: bulbasData['stats'][5]['base_stat'],
@@ -128,15 +138,14 @@ var metapodRequest = new XMLHttpRequest();
 		if (this.readyState == 4 && this.status == 200) {
 			metapodData = JSON.parse(this.response);
 			console.log(metapodData);
-			trainers.Minji.pokemon["Metapod"] = {
-				
-					hp: metapodData['stats'][5]['base_stat'],
-			        attack: metapodData['stats'][4]['base_stat'],
-			        defense: metapodData['stats'][3]['base_stat'],
-			        abilities: metapodData['abilities'][0]['ability']['name'], 
-			        sprites: metapodData['sprites']['front_default'],
-				
-			}
+			// trainers.Minji.pokemon["Metapod"] = {
+			// 	hp: metapodData['stats'][5]['base_stat'],
+			// 	attack: metapodData['stats'][4]['base_stat'],
+			// 	defense: metapodData['stats'][3]['base_stat'],
+			// 	abilities: metapodData['abilities'][0]['ability']['name'],
+			// 	sprites: metapodData['sprites']['front_default'],
+			// }
+
 	   }	
 	}
 	metapodRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/metapod.json`, true);
@@ -149,7 +158,7 @@ var vaporRequest = new XMLHttpRequest();
 	vaporRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			vaporData = JSON.parse(this.response);
-			console.log(vaporData);
+			// console.log(vaporData);
 			trainers.Strewbs.pokemon = {
 				"Vaporeon": {
 					hp: vaporData['stats'][5]['base_stat'],
@@ -171,7 +180,7 @@ var jolteonRequest = new XMLHttpRequest();
 	jolteonRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			jolteonData = JSON.parse(this.response);
-			console.log(jolteonData);
+			// console.log(jolteonData);
 			trainers.Strewbs.pokemon["Jolteon"] = {
 				
 					hp: jolteonData['stats'][5]['base_stat'],
@@ -193,7 +202,7 @@ var flareonRequest = new XMLHttpRequest();
 	flareonRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			flareonData = JSON.parse(this.response);
-			console.log(flareonData);
+			// console.log(flareonData);
 			trainers.Strewbs.pokemon["Flareon"] = {
 				
 					hp: flareonData['stats'][5]['base_stat'],
