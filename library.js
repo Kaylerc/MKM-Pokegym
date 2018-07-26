@@ -138,14 +138,10 @@ var metapodRequest = new XMLHttpRequest();
 		if (this.readyState == 4 && this.status == 200) {
 			metapodData = JSON.parse(this.response);
 			console.log(metapodData);
-			// trainers.Minji.pokemon["Metapod"] = {
-			// 	hp: metapodData['stats'][5]['base_stat'],
-			// 	attack: metapodData['stats'][4]['base_stat'],
-			// 	defense: metapodData['stats'][3]['base_stat'],
-			// 	abilities: metapodData['abilities'][0]['ability']['name'],
-			// 	sprites: metapodData['sprites']['front_default'],
-			// }
-
+			trainers.Minji.pokemon["Metapod"] = {
+				hp: metapodData['stats'][5]['base_stat'],
+				attack: metapodData['stats'][4]['base_stat']
+			}
 	   }	
 	}
 	metapodRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/metapod.json`, true);
