@@ -25,7 +25,7 @@ function chooseTrainer(name) {
 		level.innerHTML = `<i class="fas fa-signal"></i> Level: 128`;
 		battle.innerHTML = `<i class="fas fa-trophy"></i> Battles:  815`;
 		caught.innerHTML = `<i class="far fa-dot-circle"></i> Pokemon: 3`;
-		dot.innerHTML = ". . .";
+		dot.innerHTML = "";
 
 
 		pokeOne = document.getElementById('pokeOne');
@@ -46,7 +46,7 @@ function chooseTrainer(name) {
 		level.innerHTML = `<i class="fas fa-signal"></i> Level: 88`;
 		battle.innerHTML = `<i class="fas fa-trophy"></i> Battles:  818`;
 		caught.innerHTML = `<i class="far fa-dot-circle"></i> Pokemon: 3`;
-		dot.innerHTML = ". . .";
+		dot.innerHTML = "";
 
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/bulb.png";
@@ -65,7 +65,7 @@ function chooseTrainer(name) {
 		level.innerHTML = `<i class="fas fa-signal"></i> Level: 5`;
 		battle.innerHTML = `<i class="fas fa-trophy"></i> Battles:  55`;
 		caught.innerHTML = `<i class="far fa-dot-circle"></i> Pokemon: 3`;
-		dot.innerHTML = ". . .";
+		dot.innerHTML = "";
 
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/vap2.png";
