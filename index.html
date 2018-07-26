@@ -7,16 +7,20 @@
 	<!-- Compiled and minified CSS -->
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
+	 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans" rel="stylesheet">
+
+	  <link rel="stylesheet" href="animate.min.css">
+
 </head>
 <body>
-
-<h3>MKM Battle Gym</h3>
+<h3>MKM PokeGym</h3>
 
 	<div class="grid-temp">
 		<div>
 			<section>
 				<div id="trainer-grid">
 					<div>
+
 						<br>
 						<br>
 						<button onclick="chooseTrainer('Kayler')">Kayler</button>
@@ -26,12 +30,14 @@
 						<br>
 						<br>
 						<button onclick="chooseTrainer('Strewbs')">Strewbs</button>
+
 					</div>
-					<div><img id="trainer" src="images/kctrainern.png">
+					<div><img id="trainer" class="animated pulse" src="images/kctrainern.png">
 					</div>
 					<div>
+
 						<h3 id="trainerName"></h3>
-							
+
 					</div>
 				</div>
 			</section>
@@ -49,8 +55,9 @@
 			<div id="stats"></div>
 		</div>
 	</div>
-<div><button id="bat">BATTLE!!</button></div>
-
+<div>
+	<a id="bat" class="waves-effect waves-light btn pulse btn">Battle!</a>
+</div>
 
 
 <!-- *************************************************** -->
