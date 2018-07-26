@@ -94,6 +94,16 @@ h5 {
   color: #000;
 }
 
+#level, #battle, #caught {
+  padding: 10% 0;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+#level i, #battle i, #caught i {
+  color: #f48642;
+}
+
 
 #poke-grid {
   display: grid;
@@ -118,6 +128,10 @@ h5 {
   /*margin-right: 5%;*/
 }
 
+#stats span {
+  color: #f48642;
+  font-weight: bold;
+}
 
 #stats ul li {
   font-size: 20px;
@@ -126,8 +140,6 @@ h5 {
 #trainer-grid div {
   padding: 15px;
 }
-
-
 
 /* **************************************** */
 
