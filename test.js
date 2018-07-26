@@ -2,14 +2,26 @@ trainer = {
 	Kayler: {
 		pokemon: {},
 		url: ["bulb", "char", "jig"],
+		all: function() {
+			pokemonArr = Object.entries(this.pokemon);
+			return pokemonArr;
+		},
 	},
 	Minji: {
 		pokemon: {},
 		url: ["bulba", "bulbas", "metapod"],
+		all: function() {
+			pokemonArr = Object.entries(this.pokemon);
+			return pokemonArr;
+		},
 	},
 	Strewbs: {
 		pokemon: {},
 		url: ["vaporeon", "jolteon", "flareon"],
+		all: function() {
+			pokemonArr = Object.entries(this.pokemon);
+			return pokemonArr;
+		},
 	},
 	// all: () => {
 	// 	console.log(Strewbs.pokemon);
@@ -22,7 +34,7 @@ trainer = {
 var pokemonData;
 var pokemonArr;
 var choice;
-var i; // url array count
+var i = 2; // url array count
 var name;
 
 
@@ -39,10 +51,14 @@ function getTrainer(name) {
 	} 
 
 	console.log(pokemonArr);
-	getPokemon(choice);
+	while (i > pokemonArr.length) {
+	 choice = pokemonArr[i];
+	 i--;
+	}
+	 getPokemon(choice);
 }
 
-function getPokemon(i) {
+function getPokemon(choice) {
 		var pokemonRequest = new XMLHttpRequest(); 
 		
 		pokemonRequest.onreadystatechange = function() {
@@ -62,7 +78,6 @@ function getPokemon(i) {
 		pokemonRequest.open("GET", `https://raw.githubusercontent.com/Strewbs/pokemonapi/master/${choice}.json`, true);
 		pokemonRequest.send();
 }
-
 
 
 
