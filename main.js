@@ -16,7 +16,7 @@ function chooseTrainer(name) {
 
 	if (name == "Kayler") {
 
-		console.log(trainers.Kayler.pokemon);
+		// console.log(trainers.Kayler.pokemon);
 		image.src = "images/kctrainern.png";
 		trainerName.innerHTML = name;
 		dot.innerHTML = ". . .";
@@ -28,12 +28,12 @@ function chooseTrainer(name) {
 		pokeThree = document.getElementById('pokeThree');
 		pokeThree.src = "images/jig.png";
 
-		console.log(trainers.Kayler.all());
+		// console.log(trainers.Kayler.all());
 		return trainers.Kayler.all();
 
 	} else if (name == "Minji") {
 
-		console.log(trainers.Minji.pokemon);
+		// console.log(trainers.Minji.pokemon);
 		image.src = "images/minji.png";
 		trainerName.innerHTML = name;
 		dot.innerHTML = ". . .";
@@ -41,15 +41,15 @@ function chooseTrainer(name) {
 		pokeOne = document.getElementById('pokeOne');
 		pokeOne.src = "images/bulb.png";
 		pokeTwo = document.getElementById('pokeTwo');
-		pokeTwo.src = "images/bulb.png";
+		pokeTwo.src = "images/squirtle.png";
 		pokeThree = document.getElementById('pokeThree');
-		pokeThree.src = "images/meta.png";
+		pokeThree.src = "images/butterfree.png";
 
 		return trainers.Minji.all();
 
 	} else if (name == "Strewbs") {
 
-		console.log(trainers.Strewbs.pokemon);		
+		// console.log(trainers.Strewbs.pokemon);		
 		image.src = "images/strewbs.png";
 		trainerName.innerHTML = name;
 		dot.innerHTML = ". . .";
