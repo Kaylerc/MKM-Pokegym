@@ -20,28 +20,24 @@
 			<section>
 				<div id="trainer-grid">
 					<div>
-						<br><br><br><br><br>
-							<!-- <nav> -->
-								<ul>
-									<li>Kayler</li>
-									<li>Minji</li>
-									<li>Ruel</li>
-							</ul>
-						<!-- </nav> -->
+
+						<br>
+						<br>
+						<button onclick="chooseTrainer('Kayler')">Kayler</button>
+						<br>
+						<br>
+						<button onclick="chooseTrainer('Minji')">Minji</button>
+						<br>
+						<br>
+						<button onclick="chooseTrainer('Strewbs')">Strewbs</button>
+
 					</div>
 					<div><img id="trainer" class="animated pulse" src="images/kctrainern.png">
 					</div>
 					<div>
-						<br>
-						<div><form class='form-container'></form>
 
-						<br><h4> Trainer Name </h4>
-						<li>trainer stats</li>
-						<li>trainer stats</li>
-						<li>trainer stats</li>
-						<li>trainer stats</li>
+						<h3 id="trainerName"></h3>
 
-					</div>
 					</div>
 				</div>
 			</section>
@@ -51,11 +47,12 @@
 			<div id="poke-grid">
 				<h3>Pokemon Name</h3>
 				<div class="carousel"style="margin-top:-84px; height:410px; margin-left:-10px; width:117%">
-					<a class="carousel-item" href="#"><img src="images/bulb.png"></a>
-					<a class="carousel-item" href="#"><img src="images/char.png"></a>
-					<a class="carousel-item" href="#"><img src="images/jig.png"></a>
+					<a class="carousel-item" href="#" onclick="displayStat('pokeOne')"><img src="images/bulb.png" id="pokeOne"></a>
+					<a class="carousel-item" href="#" onclick="displayStat('pokeTwo')"><img src="images/char.png" id="pokeTwo"></a>
+					<a class="carousel-item" href="#" onclick="displayStat('pokeThree')"><img src="images/jig.png" id="pokeThree"></a>
 				</div>
 			</div>
+			<div id="stats"></div>
 		</div>
 	</div>
 <div>
