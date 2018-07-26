@@ -5,8 +5,12 @@ html {
   background-size: cover; //this covers the window size
   background-repeat: no-repeat; //this stops it from repeats if possible
   background-position: center;
+  /* background: center / cover no-repeat url("images/back.jpeg"); <-- shorthand */
 }
 
+body {
+  
+}
 
 .grid-temp {
   display: grid;
@@ -139,11 +143,11 @@ h3 {
   /* background: url('images/pokegridback.png'); */
 
 /* **************************************** */
-
-
+}
+/*
 #trainer {
   height: 50%
-}
+}*/
 
 #bat {
   display:flex;
@@ -153,5 +157,10 @@ h3 {
 }
 
 #stats {
-  text-align: center;
+  display: grid; /* displays the entire div and its child into a grid */
+  justify-content: center; /* centers the grid items inside the container */
+}
+
+#stats p {
+  font-size: 20px;
 }
