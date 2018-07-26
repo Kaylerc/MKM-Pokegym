@@ -78,11 +78,15 @@ function displayStat(pokeOrder) {
 	pokeName.innerHTML = array[i][0];
 
 	let hp = document.getElementById('hp');
-	hp.innerHTML = `hp: ${array[i][1]['hp']}`;
+	hp.innerHTML = `hp:  ${array[i][1]['hp']}`;
 
 	let attack = document.getElementById('attack');
-	attack.innerHTML = `attack: ${array[i][1]['attack']}`;
+	attack.innerHTML = `attack:  ${array[i][1]['attack']}`;
 
-	
+	let defense = document.getElementById('defense');
+	defense.innerHTML = `defense:  ${array[i][1]['defense']}`;
+
+	let abilities = document.getElementById('abilities');
+	abilities.innerHTML = `abilities  ${array[i][1]['abilities']}`;
 }
 
