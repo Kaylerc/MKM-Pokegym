@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
    var instances = M.Carousel.init(elems);
  });
 
+
 // Choosing the Trainer 
 
 // var choice;
@@ -28,3 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
 // 	console.log(pokemonArr)
 // 	array = pokemonArr;
 // }
+
