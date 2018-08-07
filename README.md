@@ -9,7 +9,7 @@ To collaborate on a pokemon gym website that:
 - utilizing libraries written by individual group membes 
 - demonstrates our understanding of teamwork and software engineering collaboration via Github.
 
-Team members : @Kaylerc @Schrewbs @Mingi
+Team members : @Kaylerc @ruemisa @dana2848
 
 
 _______________________________________________________________________________
