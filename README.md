@@ -1,4 +1,18 @@
-############### PLEASE READ ME ###############
+## Poke-gym
+
+This project was created by students at NYCDA
+
+### Purpose
+
+To collaborate on a pokemon gym website that:
+- showcases all chosen pokemon from the prior trainer project
+- utilizing libraries written by individual group membes 
+- demonstrates our understanding of teamwork and software engineering collaboration via Github.
+
+Team members : @Kaylerc @Schrewbs @Mingi
+
+
+_______________________________________________________________________________
 
 Welcome to the MKM Pokemon GYM
 
