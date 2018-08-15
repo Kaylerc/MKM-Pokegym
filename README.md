@@ -1,7 +1,5 @@
 ## Poke-gym
 
-This project was created by students at NYCDA
-
 ### Purpose
 
 To collaborate on a pokemon gym website that:
